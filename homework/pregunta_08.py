@@ -22,7 +22,7 @@ def pregunta_08():
      39   39   E    5  1998-01-26    44
 
      """
-     dataframe = pd.read_csv('files\\input\\tbl0.tsv', sep='\t')
+     dataframe = pd.read_csv('files/input/tbl0.tsv', sep='\t')
      dataframe["suma"] = dataframe["c0"] + dataframe["c2"]
      
      return dataframe

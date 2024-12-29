@@ -20,7 +20,7 @@ def pregunta_07():
     E    67
     Name: c2, dtype: int64
     """
-    dataframe = pd.read_csv('files\\input\\tbl0.tsv', sep='\t')
+    dataframe = pd.read_csv('files/input/tbl0.tsv', sep='\t')
     suma = dataframe.groupby("c1")["c2"].sum()
     
     return suma

@@ -23,7 +23,7 @@ def pregunta_12():
      39   39                    ggg:3,hhh:8,jjj:5
      """
 
-     dataframe = pd.read_csv('files\\input\\tbl2.tsv', sep='\t')
+     dataframe = pd.read_csv('files/input/tbl2.tsv', sep='\t')
      dataframe["c5"] = dataframe["c5a"] + ":" + dataframe["c5b"].astype(str)
      dataframe = dataframe.sort_values(by="c5")
      dataframe = dataframe.groupby("c0")["c5"].apply(lambda x: ",".join(map(str, sorted(x))))

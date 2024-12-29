@@ -14,7 +14,7 @@ def pregunta_01():
     40
 
     """
-    dataframe = pd.read_csv('files\\input\\tbl0.tsv', sep='\t')
+    dataframe = pd.read_csv('files/input/tbl0.tsv', sep='\t')
     
     return dataframe.shape[0]
 

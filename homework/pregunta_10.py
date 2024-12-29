@@ -20,7 +20,7 @@ def pregunta_10():
     D                   1:2:3:5:5:7
     E   1:1:2:3:3:4:5:5:5:6:7:8:8:9
     """
-    dataframe = pd.read_csv('files\\input\\tbl0.tsv', sep='\t')
+    dataframe = pd.read_csv('files/input/tbl0.tsv', sep='\t')
     dataframe = dataframe.sort_values(by="c2")
     dataframe = dataframe.groupby("c1")["c2"].apply(lambda x: ":".join(map(str, sorted(x))))
     dataframe = dataframe.reset_index(name='c2')

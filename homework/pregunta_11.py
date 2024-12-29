@@ -23,7 +23,7 @@ def pregunta_11():
     39   39    a,d,f
     """
     
-    dataframe = pd.read_csv('files\\input\\tbl1.tsv', sep='\t')
+    dataframe = pd.read_csv('files/input/tbl1.tsv', sep='\t')
     dataframe = dataframe.sort_values(by="c4")
     dataframe = dataframe.groupby("c0")["c4"].apply(lambda x: ",".join(map(str, sorted(x))))
     dataframe = dataframe.reset_index(name='c4')

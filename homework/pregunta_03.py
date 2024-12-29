@@ -21,7 +21,7 @@ def pregunta_03():
     Name: count, dtype: int64
 
     """
-    dataframe = pd.read_csv('files\\input\\tbl0.tsv', sep='\t')
+    dataframe = pd.read_csv('files/input/tbl0.tsv', sep='\t')
     conteo = dataframe["c1"].value_counts()
     conteo2 = conteo.sort_index() 
 

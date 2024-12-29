@@ -20,7 +20,7 @@ def pregunta_05():
     E    9
     Name: c2, dtype: int64
     """
-    dataframe = pd.read_csv('files\\input\\tbl0.tsv', sep='\t')
+    dataframe = pd.read_csv('files/input/tbl0.tsv', sep='\t')
     maximo = dataframe.groupby("c1")["c2"].max()
     
     return maximo

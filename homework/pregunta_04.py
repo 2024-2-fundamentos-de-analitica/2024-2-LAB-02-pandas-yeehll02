@@ -20,7 +20,7 @@ def pregunta_04():
     E    4.785714
     Name: c2, dtype: float64
     """
-    dataframe = pd.read_csv('files\\input\\tbl0.tsv', sep='\t')
+    dataframe = pd.read_csv('files/input/tbl0.tsv', sep='\t')
     promedio = dataframe.groupby("c1")["c2"].mean()
     
     return promedio

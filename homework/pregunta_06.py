@@ -15,7 +15,7 @@ def pregunta_06():
     ['A', 'B', 'C', 'D', 'E', 'F', 'G']
 
     """
-    dataframe = pd.read_csv('files\\input\\tbl1.tsv', sep='\t')
+    dataframe = pd.read_csv('files/input/tbl1.tsv', sep='\t')
     unicos = dataframe["c4"].unique()
 
     for i in range(len(unicos)):

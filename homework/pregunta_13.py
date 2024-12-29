@@ -21,8 +21,8 @@ def pregunta_13():
     Name: c5b, dtype: int64
     """
 
-    dataframe = pd.read_csv('files\\input\\tbl0.tsv', sep='\t')
-    dataframe2 = pd.read_csv('files\\input\\tbl2.tsv', sep='\t')
+    dataframe = pd.read_csv('files/input/tbl0.tsv', sep='\t')
+    dataframe2 = pd.read_csv('files/input/tbl2.tsv', sep='\t')
     dataframe2 = dataframe2.groupby('c0').sum()
     dataframe2 = dataframe2.reset_index()
     dataframe = dataframe.merge(dataframe2, how='inner', left_on='c0', right_on='c0')
